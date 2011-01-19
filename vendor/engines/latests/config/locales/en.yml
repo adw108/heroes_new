@@ -1,0 +1,23 @@
+en:
+  shared:
+    admin:
+      image_picker:
+        image: image
+  plugins:
+    latests:
+      title: Latests
+  admin:
+    latests:
+      index:
+        create_new: Create a new Latest
+        reorder: Reorder Latests
+        reorder_done: Done Reordering Latests
+        sorry_no_results: Sorry! There are no results found.
+        no_items_yet: There are no Latests yet. Click "Create a new Latest" to add your first latest.
+      latest:
+        view_live: View this latest live <br/><em>(opens in a new window)</em>
+        edit: Edit this latest
+        delete: Remove this latest forever
+  latests:
+    show:
+      other: Other Latests

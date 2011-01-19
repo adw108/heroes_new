@@ -1,0 +1,69 @@
+<% form_for [:admin, @latest] do |f| -%>
+  <%= render :partial => "/shared/admin/error_messages", :locals => {
+    :object => @latest,
+    :include_object_name => true
+  } %>
+  
+  <div class='field'>
+    <%= f.label :title -%>
+    <%= f.text_field :title, :class => 'larger widest' -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :date -%>
+    <%= f.date_select :date -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :description -%>
+    <%= f.text_area :description, :rows => 20, :class => 'wymeditor widest' -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :image -%>
+    <%= render :partial => "/shared/admin/image_picker", :locals => {
+      :f => f,
+      :field => :image_id,
+      :image => @latest.image,
+      :toggle_image_display => false
+    } %>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :image2 -%>
+    <%= render :partial => "/shared/admin/image_picker", :locals => {
+      :f => f,
+      :field => :image2_id,
+      :image => @latest.image2,
+      :toggle_image_display => false
+    } %>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :image3 -%>
+    <%= render :partial => "/shared/admin/image_picker", :locals => {
+      :f => f,
+      :field => :image3_id,
+      :image => @latest.image3,
+      :toggle_image_display => false
+    } %>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :brochure -%>
+
+    <%= render :partial => "/shared/admin/resource_picker", :locals => {
+      :f => f,
+      :field => :brochure_id,
+      :resource => @latest.brochure,
+    } %>
+  </div>
+  
+  <%= render :partial => "/shared/admin/form_actions",
+              :locals => {
+                :f => f,
+                :continue_editing => false,
+                :delete_title => t('admin.latests.latest.delete'),
+                :delete_confirmation => t('shared.admin.delete.message', :title => @latest.title)
+              } %>
+<% end -%>

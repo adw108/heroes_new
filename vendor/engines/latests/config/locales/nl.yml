@@ -1,0 +1,19 @@
+nl:
+  plugins:
+    latests:
+      title: Latests
+  admin:
+    latests:
+      index:
+        create_new: Maak een nieuwe Latest
+        reorder: Wijzig de volgorde van de Latests
+        reorder_done: Klaar met het wijzingen van de volgorde van de Latests
+        sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+        no_items_yet: Er zijn nog geen Latests. Druk op 'Maak een nieuwe Latest' om de eerste aan te maken.
+      latest:
+        view_live: Bekijk deze latest op de website <br/><em>(opent een nieuw venster)</em>
+        edit: Bewerk deze latest
+        delete: Verwijder deze latest voor eeuwig
+  latests:
+    show:
+      other: Andere Latests

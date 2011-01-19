@@ -1,0 +1,19 @@
+nb:
+  plugins:
+    latests:
+      title: Latests
+  admin:
+    latests:
+      index:
+        create_new: Lag en ny Latest
+        reorder: Endre rekkefølgen på Latests
+        reorder_done: Ferdig å endre rekkefølgen Latests
+        sorry_no_results: Beklager! Vi fant ikke noen resultater.
+        no_items_yet: Det er ingen Latests enda. Klikk på "Lag en ny Latest" for å legge til din første latest.
+      latest:
+        view_live: Vis hvordan denne latest ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+        edit: Rediger denne latest
+        delete: Fjern denne latest permanent
+  latests:
+    show:
+      other: Andre Latests
