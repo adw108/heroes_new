@@ -43,8 +43,8 @@ gem 'refinerycms-news',       '~> 0.9.9'
 gem 'refinerycms-portfolio',  '~> 0.9.8'
 gem 'refinerycms-theming',    '~> 0.9.8'
 gem 'refinerycms-blog', '~> 1.1'
-gem 'refinerycms-blog-images', '~> 0.9.9'
-
+# gem 'refinerycms-blog-images', '~> 0.9.9'
+gem 'refinerycms-generators', '~> 0.9.9', :git => 'git://github.com/resolve/refinerycms-generators'
 # Add i18n support (optional, you can remove this if you really want to).
 gem 'refinerycms-i18n',         '~> 0.9'
 
