@@ -3,3 +3,48 @@
   Override default refinery application CSS below. 
   Formatting applies to all frontend.
 */
+
+body
+{
+	background-color: #eee;
+}
+
+#footer
+{
+	text-align: center;
+	background-color: #bbb;
+	padding: 10px;
+	margin-top: 20px;
+}
+
+#menu
+{
+  background-color: #bbb;
+}
+#menu ul {
+  list-style: none;
+  padding: 0px;
+}
+
+#menu ul li {
+  float: left;
+  margin-right: 10px;
+}
+
+#menu ul li a {
+  display: block;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+#menu ul li.selected a, #menu ul li a:hover {
+  background: #CCC;
+}
+
+#body_content, #side_body_content {
+  float: left;
+  width: 80%;
+  background: white;
+  color: #333;
+  padding: 20px;
+}

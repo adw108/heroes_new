@@ -35,7 +35,7 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
 java = (RUBY_PLATFORM == 'java')
 
 # Specify the Refinery CMS core:
-gem 'refinerycms',              '~> 0.9.8.9'
+gem 'refinerycms', :git => "git://github.com/resolve/refinerycms.git"
 
 # Specify additional Refinery CMS Engines here (all optional):
 gem 'refinerycms-inquiries',    '~> 0.9'
@@ -43,6 +43,7 @@ gem 'refinerycms-news',       '~> 0.9.9'
 gem 'refinerycms-portfolio',  '~> 0.9.8'
 gem 'refinerycms-theming',    '~> 0.9.8'
 gem 'refinerycms-blog', '~> 1.1'
+gem 'refinerycms-blog-images', '~> 0.9.9'
 
 # Add i18n support (optional, you can remove this if you really want to).
 gem 'refinerycms-i18n',         '~> 0.9'
